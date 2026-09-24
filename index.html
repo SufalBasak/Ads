@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code_IT | Web Development, Apps, Branding, Ads & SEO Studio</title>
+  <meta name="description" content="Professional technology & digital solutions company building high-performance websites, web applications, SaaS products, mobile apps, branding, ads & SEO." />
+  <meta name="keywords" content="web development, app development, saas development, branding agency, google ads, technical seo, software studio" />
+  <meta property="og:title" content="Code_IT | Digital Product Studio" />
+  <meta property="og:description" content="We build digital products that grow businesses. From websites and apps to branding and SEO." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://example.com/index.html" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Sticky Header Wrapper (Holds Promo Offer Banner + Main Nav) -->
+  <div class="site-header-sticky">
+    <!-- Promotional 30% Offer Banner -->
+    <aside class="offer-banner" role="region" aria-label="Limited time promotion">
+      <div class="container offer-banner-content">
+        <span class="offer-badge">LIMITED-TIME OFFER</span>
+        <span>Get <strong>30% OFF</strong> on selected development packages. Starting from <strong>₹599</strong></span>
+        <a href="pricing.html" class="offer-banner-link">View Offer Pricing →</a>
+      </div>
+    </aside>
+
+    <!-- Sticky Main Navigation -->
+    <header class="site-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Code_IT Home">
+          <span class="brand-logo-icon">⚡</span>
+          <span>Code_IT</span>
+          <span class="brand-logo-badge">STUDIO</span>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links" id="nav-links">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="branding.html" class="nav-link">Branding</a></li>
+            <li class="nav-item"><a href="web-apps.html" class="nav-link">Web Apps</a></li>
+            <li class="nav-item"><a href="apps.html" class="nav-link">Apps</a></li>
+            <li class="nav-item"><a href="ads-seo.html" class="nav-link">Ads &amp; SEO</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Now</a></li>
+            <li class="nav-item mobile-only" style="display: none;">
+              <a href="inquiry.html" class="btn btn-primary btn-sm btn-block">Start a Project</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="inquiry.html" class="btn btn-primary btn-sm">Start a Project</a>
+          <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero Section with 3D Orbit Interactive Studio Visual -->
+  <section class="hero-wrapper" aria-labelledby="hero-title">
+    <div class="bg-glow-orb bg-glow-1"></div>
+    <div class="bg-glow-orb bg-glow-2"></div>
+
+    <div class="container hero-grid">
+      <!-- Left Hero Copy -->
+      <div class="hero-content reveal">
+        <div class="hero-badge-container">
+          <span class="hero-badge-tag">NEW RELEASE</span>
+          <span class="hero-badge-text">Full Stack Studio &bull; Websites, Apps &amp; Growth</span>
+        </div>
+
+        <h1 class="hero-headline" id="hero-title">
+          We Build Digital Products <br />
+          <em>That Grow Businesses.</em>
+        </h1>
+
+        <p class="hero-subtext">
+          From websites and web applications to apps, branding, advertising and SEO &mdash; we build complete digital solutions for businesses, startups and entrepreneurs.
+        </p>
+
+        <div class="hero-actions">
+          <a href="inquiry.html" class="btn btn-primary btn-lg">
+            Start Your Project
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="projects.html" class="btn btn-secondary btn-lg">Explore Our Work</a>
+        </div>
+
+        <div class="hero-guarantees">
+          <div class="guarantee-item">
+            <svg class="guarantee-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Starting from <strong>₹599</strong></span>
+          </div>
+          <div class="guarantee-item">
+            <svg class="guarantee-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>30% Promotional Offer</span>
+          </div>
+          <div class="guarantee-item">
+            <svg class="guarantee-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Direct Google Sheets CRM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Hero Video & Studio Showcase -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-visual-frame">
+          <div class="studio-tech-card hero-video-card">
+            <div class="studio-card-header">
+              <div class="tech-dots">
+                <span class="tech-dot red"></span>
+                <span class="tech-dot yellow"></span>
+                <span class="tech-dot green"></span>
+              </div>
+              <span class="tech-label">STUDIO SHOWCASE &bull; FULL-STACK ENGINEERING</span>
+              <span class="tech-live-pill">
+                <span class="pulse-dot"></span> LIVE DEMO
+              </span>
+            </div>
+
+            <div class="hero-video-container">
+              <video 
+                id="hero-video-player"
+                class="hero-media-video" 
+                autoplay 
+                loop 
+                muted 
+                playsinline 
+                preload="auto"
+              >
+                <source src="gemini_generated_video_3c59498c.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              
+              <div class="video-overlay-controls">
+                <button type="button" class="video-ctrl-btn" id="hero-video-toggle" title="Play / Pause Video" aria-label="Pause or play video">
+                  <svg id="video-play-icon" style="display:none;" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg id="video-pause-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <button type="button" class="video-ctrl-btn" id="hero-sound-toggle" title="Mute / Unmute Audio" aria-label="Mute or unmute audio">
+                  <svg id="sound-muted-icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                  <svg id="sound-unmuted-icon" style="display:none;" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                </button>
+              </div>
+
+              <div class="canvas-overlay-caption">
+                <span>✦ Production App &amp; Web Platform</span>
+                <span class="canvas-badge">Web &bull; Apps &bull; SaaS &bull; SEO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Micro Badges -->
+          <div class="hero-floating-stat stat-1 float-animation">
+            <div class="stat-icon-wrapper">🚀</div>
+            <div>
+              <div class="stat-info-title">Clean Engineering</div>
+              <div class="stat-info-val">Lighthouse 98+</div>
+            </div>
+          </div>
+
+          <div class="hero-floating-stat stat-2 float-animation-reverse">
+            <div class="stat-icon-wrapper">🔒</div>
+            <div>
+              <div class="stat-info-title">Google Sheets Sync</div>
+              <div class="stat-info-val">Auto CRM Connected</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Showcase Section -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">SERVICES &amp; CAPABILITIES</span>
+        <h2 class="section-title">End-to-End Digital Engineering</h2>
+        <p class="section-subtitle">
+          We don't just build templates. We architect scalable, secure, and conversion-optimized digital products from day one.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Web Development -->
+        <article class="service-card reveal">
+          <div class="service-icon-box">💻</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">
+            Lightning-fast business websites, complex SaaS platforms, e-commerce storefronts, and internal administrative dashboards.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Business Websites &amp; Landing Pages
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              SaaS Platforms &amp; Portals
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Custom Business Dashboards
+            </li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price-tag">Starting from <strong>₹599</strong></span>
+            <a href="inquiry.html?package=Starter" class="btn btn-outline btn-sm">Get Started →</a>
+          </div>
+        </article>
+
+        <!-- App Development -->
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon-box">📱</div>
+          <h3 class="service-title">App Development</h3>
+          <p class="service-desc">
+            Native and cross-platform mobile apps, Progressive Web Apps (PWAs), education applications, and enterprise utility tools.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              iOS &amp; Android Applications
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Progressive Web Apps (PWA)
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Offline Sync &amp; Biometric Auth
+            </li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price-tag">Starting from <strong>₹7,999</strong></span>
+            <a href="inquiry.html?package=Web%20Application" class="btn btn-outline btn-sm">Discuss App →</a>
+          </div>
+        </article>
+
+        <!-- Branding & UI/UX -->
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon-box">🎨</div>
+          <h3 class="service-title">Branding &amp; UI/UX</h3>
+          <p class="service-desc">
+            Bespoke brand identities, vector logo suites, design systems, social media creative templates, and marketing visual kits.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Vector Logo &amp; Identity System
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Figma Design Tokens &amp; UI Kit
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Social Media &amp; Promo Video Assets
+            </li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price-tag">Starting from <strong>₹1,499</strong></span>
+            <a href="branding.html" class="btn btn-outline btn-sm">Explore Branding →</a>
+          </div>
+        </article>
+
+        <!-- Advertising & Lead Funnels -->
+        <article class="service-card reveal">
+          <div class="service-icon-box">📈</div>
+          <h3 class="service-title">Advertising &amp; Ads</h3>
+          <p class="service-desc">
+            High-intent Google Ads and Meta campaigns paired with custom high-speed landing pages and real-time conversion tracking.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Google Search &amp; Display Ads
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Meta (Facebook &amp; Instagram) Ads
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Conversion Landing Page Optimization
+            </li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price-tag">Starting from <strong>₹2,499</strong></span>
+            <a href="ads-seo.html" class="btn btn-outline btn-sm">View Ads Strategy →</a>
+          </div>
+        </article>
+
+        <!-- Technical & On-Page SEO -->
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon-box">🔍</div>
+          <h3 class="service-title">Technical SEO</h3>
+          <p class="service-desc">
+            Core Web Vitals performance tuning, semantic structured data schemas, search console indexing, and keyword architecture.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Full Technical &amp; On-Page Audit
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Schema.org &amp; OpenGraph Markup
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Speed &amp; Core Web Vitals (90+ Score)
+            </li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price-tag">Starting from <strong>₹1,999</strong></span>
+            <a href="ads-seo.html" class="btn btn-outline btn-sm">Explore SEO →</a>
+          </div>
+        </article>
+
+        <!-- Post-Launch Maintenance & Support -->
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon-box">🛡️</div>
+          <h3 class="service-title">Maintenance &amp; Support</h3>
+          <p class="service-desc">
+            Continuous system monitoring, security patches, SLA response guarantees, database backups, and feature rollouts.
+          </p>
+          <ul class="service-feature-list">
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Bug Fixing &amp; Patch Updates
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Cloud Server &amp; Database Backups
+            </li>
+            <li class="service-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Dedicated Technical Consultation
+            </li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-price-tag">Monthly SLA Plans</span>
+            <a href="support.html" class="btn btn-outline btn-sm">View Support →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 3D WorksWheel Portfolio Showcase -->
+  <section class="works-wheel-section" id="projects-wheel">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">PORTFOLIO INDEX &bull; WORKS '26</span>
+        <h2 class="section-title">Selected Projects &amp; Software Work</h2>
+        <p class="section-subtitle">
+          Turn the interactive wheel using your mouse, trackpad, touch swipe or arrow keys to browse our recent engineering case studies.
+        </p>
+      </div>
+
+      <!-- 3D WorksWheel Mount Container -->
+      <div class="works-wheel-wrapper reveal" id="works-wheel-container">
+        <!-- Injected by js/works-wheel-vanilla.js -->
+      </div>
+
+      <div class="wheel-controls-bar reveal">
+        <div class="wheel-instruction">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <span>Drag vertically or scroll wheel to rotate drum &bull; Click to open case study</span>
+        </div>
+        <div>
+          <a href="projects.html" class="btn btn-primary btn-sm">View All Projects Grid →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Preview Section Starting from ₹599 -->
+  <section class="section pricing-section" id="pricing-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">TRANSPARENT PRICING</span>
+        <h2 class="section-title">Simple Pricing. Powerful Products.</h2>
+        <p class="section-subtitle">
+          Choose a starting package or tell us what you want to build. Starting from <strong>₹599</strong> with <strong>30% promotional discount</strong> applied.
+        </p>
+      </div>
+
+      <!-- 4 Core Pricing Cards Grid -->
+      <div class="pricing-grid">
+        <!-- Starter Card -->
+        <div class="pricing-card reveal">
+          <h3 class="pricing-tier-name">Starter</h3>
+          <p class="pricing-tier-target">Personal websites, landing pages, simple business pages</p>
+          <div class="price-box">
+            <span class="price-start-label">Starting from</span>
+            <div class="price-amount-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-number">599</span>
+            </div>
+            <span class="price-discount-pill">30% OFF APPLIED</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Responsive UI design
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Basic contact &amp; inquiry form
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Basic SEO meta tags setup
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Mobile &amp; tablet optimized
+            </li>
+          </ul>
+          <button onclick="selectPackage('starter')" class="btn btn-secondary btn-block">Get Started →</button>
+        </div>
+
+        <!-- Business Card (Popular) -->
+        <div class="pricing-card popular reveal reveal-delay-1">
+          <span class="popular-badge">MOST POPULAR</span>
+          <h3 class="pricing-tier-name">Business</h3>
+          <p class="pricing-tier-target">Small businesses, professional websites, service companies</p>
+          <div class="price-box">
+            <span class="price-start-label">Starting from</span>
+            <div class="price-amount-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-number">2,999</span>
+            </div>
+            <span class="price-discount-pill">30% OFF APPLIED</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Multi-page website (Up to 7 pages)
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Direct Google Sheets inquiry sync
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Comprehensive On-Page SEO setup
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Google Analytics &amp; Search Console
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Performance score 90+
+            </li>
+          </ul>
+          <button onclick="selectPackage('business')" class="btn btn-primary btn-block">Get Started →</button>
+        </div>
+
+        <!-- Web Application Card -->
+        <div class="pricing-card reveal reveal-delay-2">
+          <h3 class="pricing-tier-name">Web Application</h3>
+          <p class="pricing-tier-target">Startups, internal tools, SaaS MVPs, portals</p>
+          <div class="price-box">
+            <span class="price-start-label">Starting from</span>
+            <div class="price-amount-wrap">
+              <span class="price-currency">₹</span>
+              <span class="price-number">7,999</span>
+            </div>
+            <span class="price-discount-pill">30% OFF APPLIED</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Custom dynamic UI architecture
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              User Authentication &amp; Sessions
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Interactive Dashboard &amp; Analytics
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Database &amp; REST API integration
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Cloud deployment setup
+            </li>
+          </ul>
+          <button onclick="selectPackage('webapp')" class="btn btn-secondary btn-block">Discuss Your Project →</button>
+        </div>
+
+        <!-- Custom Product Card -->
+        <div class="pricing-card reveal reveal-delay-3">
+          <h3 class="pricing-tier-name">Custom Product</h3>
+          <p class="pricing-tier-target">SaaS platforms, complex business tools, education apps</p>
+          <div class="price-box">
+            <span class="price-start-label">Tailored quote</span>
+            <div class="price-amount-wrap">
+              <span class="price-number" style="font-size: 1.85rem;">Custom Quote</span>
+            </div>
+            <span class="price-discount-pill">30% OFF ELIGIBLE*</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Custom full-stack architecture
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Admin control panel &amp; RBAC
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              AI features, Payment &amp; WhatsApp APIs
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Dedicated maintenance &amp; SLA
+            </li>
+          </ul>
+          <button onclick="selectPackage('custom')" class="btn btn-secondary btn-block">Request a Quote →</button>
+        </div>
+      </div>
+
+      <div class="pricing-disclaimer reveal">
+        <strong>Important:</strong> All prices shown are <strong>starting prices</strong>. Final pricing depends on project requirements, features, design complexity, and development scope. *Offer terms apply.
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Conversion CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner-section reveal">
+        <div class="cta-banner-grid">
+          <div>
+            <h2 class="cta-banner-title">Have an idea? Let's build it together.</h2>
+            <p class="cta-banner-desc">
+              You bring the idea. We design it, develop it, launch it, and help it grow.
+            </p>
+          </div>
+          <div class="cta-banner-actions">
+            <a href="inquiry.html" class="btn btn-primary btn-lg">Start Building Your Product →</a>
+            <a href="projects.html" class="btn btn-outline btn-lg">Explore Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="section-title">Clear &amp; Transparent Answers</h2>
+      </div>
+
+      <div class="faq-accordion reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is ₹599 the final price?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            ₹599 is the starting price for selected simple landing pages or basic personal single-page websites. The final quote depends entirely on your specific requirements, number of pages, and interactive features.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What does the 30% offer mean?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            The 30% promotional discount applies to eligible development packages and custom quotes submitted during the current campaign. You receive full transparent calculations prior to starting.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I request a custom product or SaaS MVP?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes. Simply complete the project inquiry form, specify your product features, API needs, and timeline, and we will formulate a comprehensive architecture plan and milestone breakdown.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you provide post-launch maintenance &amp; support?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes. We provide ongoing support plans covering server monitoring, database backups, security patches, performance audits, and continuous feature iterations.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I change or add requirements later?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            Yes. We follow an agile sprint workflow where additional scope, custom integrations, or design changes can be quoted transparently as the product evolves.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- World & Pan-India Connectivity Map Section -->
+  <section class="section world-map-section" id="connectivity-map">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">LOCATION &bull; KOLKATA TO WHOLE INDIA</span>
+        <h2 class="section-title">Remote Connectivity Across India &amp; Global</h2>
+        <p class="section-subtitle">
+          Headquartered in <strong>Kolkata</strong>, engineering high-impact digital products for clients across New Delhi, Mumbai, Bengaluru, Hyderabad, Chennai, Pune, Ahmedabad, and global tech corridors.
+        </p>
+      </div>
+
+      <!-- World Map Mount Container -->
+      <div id="world-map-mount" class="reveal">
+        <!-- Injected by js/world-map-vanilla.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-logo-icon">⚡</span>
+            <span>Code_IT</span>
+          </a>
+          <p class="footer-brand-desc">
+            Premium software development studio building scalable websites, web applications, SaaS platforms, branding systems, and performance SEO funnels.
+          </p>
+          <p style="font-size: 0.8125rem; color: #64748b;">
+            Kolkata HQ &bull; Serving Pan-India &bull; Google Sheets Automated CRM
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="web-apps.html">SaaS Platforms</a></li>
+            <li><a href="apps.html">Mobile Applications</a></li>
+            <li><a href="branding.html">Branding &amp; UI/UX</a></li>
+            <li><a href="ads-seo.html">Google &amp; Meta Ads</a></li>
+            <li><a href="ads-seo.html">Technical SEO</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Products &amp; Pricing</h4>
+          <ul class="footer-links">
+            <li><a href="pricing.html">Pricing Overview</a></li>
+            <li><a href="pricing.html#starter">Starter (₹599)</a></li>
+            <li><a href="pricing.html#business">Business (₹2,999)</a></li>
+            <li><a href="pricing.html#webapp">Web Apps (₹7,999)</a></li>
+            <li><a href="projects.html">Portfolio Index</a></li>
+            <li><a href="contact.html">Contact Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Start Building</h4>
+          <ul class="footer-links">
+            <li><a href="inquiry.html">Project Inquiry Form</a></li>
+            <li><a href="contact.html">Contact Studio</a></li>
+            <li><a href="contact.html">Direct Project Consultation</a></li>
+          </ul>
+          <div style="margin-top: 1.25rem;">
+            <a href="inquiry.html" class="btn btn-primary btn-sm btn-block">Start Your Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Code_IT Studio &bull; All rights reserved.</p>
+        <p>Kolkata &bull; All India Delivery &bull; You bring the idea. We build the product.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/sheets-api.js"></script>
+  <script src="js/orbit-hero-vanilla.js"></script>
+  <script src="js/works-wheel-vanilla.js"></script>
+  <script src="js/world-map-vanilla.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
