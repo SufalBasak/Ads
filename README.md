@@ -1,6 +1,6 @@
-# Code_IT & Sufal_Ad Digital Product Studio
+# Code_X tech & Sufal_Ad Digital Product Studio
 
-A **professional, modern, conversion-focused digital agency web application** built with HTML5, CSS3, Vanilla JavaScript, Google Sheets CRM, and Google Apps Script API integration.
+A **professional, modern, conversion-focused digital agency web application** built with HTML5, CSS3, Vanilla JavaScript, Google Sheets CRM, and Google Apps Script API integration. Developed by Sufal basak.
 
 ---
 
